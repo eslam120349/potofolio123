@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designer · Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVBAR
+    ============================================ -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span>M.</span> Portfolio
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HERO (السبليت بتاعك)
+    ============================================ -->
+    <section class="hero" id="hero">
+
+        <!-- LEFT TEXT -->
+        <div class="side left" id="textLeft">
+            <span class="tag">Hello, I'm</span>
+            <h1>UI/UX <span>Designer</span></h1>
+            <p>I create modern, intuitive interfaces with a strong focus on user experience and visual identity.</p>
+            <a href="#" class="btn">View Design Work</a>
+        </div>
+
+        <!-- SPLIT IMAGES -->
+        <div class="split" id="splitContainer">
+
+            <div class="panel panel-left" id="panelLeft">
+                <img src="./public/image/designer.png" class="photo" id="imgLeft" draggable="false" alt="Designer" />
+            </div>
+
+            <div class="panel panel-right" id="panelRight">
+                <img src="./public/image/coder.png" class="photo" id="imgRight" draggable="false" alt="Developer" />
+            </div>
+
+            <div class="divider" id="divider">
+                <div class="handle"><span></span></div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="side right" id="textRight">
+            <span class="tag">Hello, I'm</span>
+            <h1>Front‑End <span>Developer</span></h1>
+            <p>I build fast, responsive websites with clean, maintainable code and modern technologies.</p>
+            <a href="#" class="btn">View Dev Work</a>
+        </div>
+
+    </section>
+
+    <!-- ============================================
+    ABOUT SECTION
+    ============================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">About Me</span>
+                    <h2>Designing &amp; Developing <br />with Purpose</h2>
+                    <p>
+                        I'm a multidisciplinary creative who bridges the gap between
+                        <strong>visual design</strong> and <strong>front-end development</strong>.
+                        With over 5 years of experience, I craft digital experiences that are not only
+                        beautiful but also highly functional and user-centric.
+                    </p>
+                    <p>
+                        Whether it's a pixel-perfect UI or a high-performance web app, I bring ideas
+                        to life with clean code and a sharp eye for detail.
+                    </p>
+                    <div class="about-stats">
+                        <div><span>5+</span> Years Experience</div>
+                        <div><span>120+</span> Projects Delivered</div>
+                        <div><span>98%</span> Client Satisfaction</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SKILLS SECTION
+    ============================================ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2>What I Do Best</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframing, prototyping, user flows, and high-fidelity interfaces using Figma &amp; Adobe XD.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Front-End Dev</h3>
+                    <p>HTML, CSS, JavaScript, React, and responsive frameworks to build blazing-fast websites.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Pixel-perfect layouts that look stunning on every device, from mobile to 4K screens.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Performance</h3>
+                    <p>Optimizing load times, accessibility, and SEO to ensure smooth, inclusive experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    WORK / PORTFOLIO SECTION
+    ============================================ -->
+    <section class="section work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-thumb" style="background: linear-gradient(135deg, #4a9eff, #6c3bff);">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="work-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>UI/UX Design &amp; React Frontend</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-thumb" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="work-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Data Visualization &amp; Interactive UI</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-thumb" style="background: linear-gradient(135deg, #00d2d3, #01a3a4);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="work-info">
+                        <h3>Fitness App</h3>
+                        <p>Mobile-first Design &amp; Prototyping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CONTACT SECTION
+    ============================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <span class="section-tag">Let's Talk</span>
+                    <h2>Have a Project in Mind?</h2>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-info">
+                        <div><i class="fas fa-envelope"></i> e.faras12@gmail.com</div>
+                        <div><i class="fas fa-phone"></i> +20 1095682795</div>
+                        <div><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 M. Portfolio. Crafted with <i class="fas fa-heart" style="color:#ff6b6b;"></i></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

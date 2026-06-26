@@ -1046,7 +1046,7 @@
 
             panelLeft.style.clipPath = `inset(0 ${percent}% 0 0)`;
             panelRight.style.clipPath = `inset(0 0 0 ${100 - percent}%)`;
-            divider.style.left = `${percent}%`;
+            divider.style.left = `${100-percent}%`;
 
             textLeft.style.opacity = 1 - p;
             textRight.style.opacity = p;
